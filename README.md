@@ -1,7 +1,7 @@
 # SMB-Bash-Script-for-WireGuard-
 This Shell script is intended to be used for Docker containers on a Gluetun image running a WireGuard VPN in client mode.
 
-This script essentially waits for a specific IP address to become available on any network interface and then mounts an SMB volume if that IP is found. It's assumed that the IP Address that you're looking for is guaranteed to have internet access if present, otherwise the SMB mount will fail.
+This script essentially waits for a specific IP address to become available on any network interface and then mounts an Azure SMB file share if that IP is found. It's assumed that the IP Address that you're looking for is guaranteed to have internet access if present, otherwise the SMB mount will fail.
 
 The Shell script would ideally be set to run on container startup but only after the WireGuard VPN client connection has been provisioned from the entrypoint.sh script in the Gluetun image.
 
